@@ -392,6 +392,7 @@ const Index = () => {
                 <Button
                   size="lg"
                   className="bg-white text-orange-600 font-bold text-lg sm:text-xl px-6 sm:px-10 py-3 sm:py-4 rounded-2xl shadow-xl transform hover:scale-110 transition-all duration-300 border-0 w-full sm:w-auto"
+                  onClick={() => window.open('https://pay.speedsellx.com/688FFED19B52C', '_blank')}
                 >
                   💎 APROVECHAR OFERTA AHORA
                 </Button>
