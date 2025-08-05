@@ -40,6 +40,65 @@ const Index = () => {
                 <span className="text-accent">$8.99</span>
               </h1>
 
+              {/* APP Funcionando Content */}
+              <div className="text-center mb-16">
+                <div className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
+                  ✅ PLATAFORMA 100% FUNCIONAL
+                </div>
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6 text-foreground">
+                  ¡VE CÓMO FUNCIONA EN TIEMPO REAL!
+                </h2>
+                <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+                  Nuestra aplicación ya está <span className="text-primary font-semibold">completamente operativa</span> con
+                  más de 2,000 canales en vivo y 50,000 películas disponibles las 24 horas
+                </p>
+              </div>
+
+              <div className="max-w-2xl mx-auto mb-12">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-card border border-border">
+                  <img
+                    src="/tv_edite.png?v=1"
+                    alt="StreamLATAM App - Interface Real Funcionando"
+                    className="w-full h-auto block"
+                    style={{ maxWidth: '100%' }}
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      if (target.parentElement) {
+                        target.parentElement.innerHTML = `
+                          <div class="bg-card p-12 text-center text-foreground rounded-3xl border border-border">
+                            <h3 class="text-2xl font-bold mb-4">📱 PLATAFORMA ACTIVA</h3>
+                            <p class="text-muted-foreground">Aplicación completamente funcional y operativa</p>
+                          </div>
+                        `;
+                      }
+                    }}
+                  />
+                </div>
+              </div>
+
+              <div className="text-center mb-12">
+                <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl p-4 sm:p-8 border border-primary/20">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-4 text-foreground">
+                    ¿Listo para tener acceso completo?
+                  </h3>
+                  <p className="text-sm sm:text-base text-muted-foreground mb-6 max-w-2xl mx-auto px-2">
+                    Únete a más de 10,000 usuarios que ya disfrutan de todo el contenido premium
+                    por solo <span className="text-primary font-bold">$8.99</span>
+                  </p>
+                  <Button
+                    size="lg"
+                    className="bg-primary text-sm sm:text-lg px-4 sm:px-8 py-3 sm:py-4 shadow-lg hover:shadow-xl transition-all w-full sm:w-auto max-w-md mx-auto"
+                    onClick={() => window.open('https://pay.speedsellx.com/688FFED19B52C', '_blank')}
+                  >
+                    🚀 OBTENER ACCESO AHORA - $8.99
+                  </Button>
+                  <p className="text-xs sm:text-sm text-muted-foreground mt-4 px-2">
+                    ⚡ Activación inmediata • 🛡️ Garantía 7 días • 🔒 Pago 100% seguro
+                  </p>
+                </div>
+              </div>
+
               <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8">
                 Canales Premium, Deportes, UFC, Adultos + Estrenos de Cine como Wicked, Gladiator II, Moana 2
               </p>
@@ -137,75 +196,7 @@ const Index = () => {
         </div>
       </section>
 
-      <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 text-center py-8">
-        Canales Premium, Deportes, UFC, Adultos + Estrenos de Cine como Wicked, Gladiator II, Moana 2
-      </p>
 
-      {/* APP Funcionando Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-background to-secondary/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="inline-block bg-gradient-to-r from-green-500 to-emerald-500 text-white px-6 py-2 rounded-full text-sm font-semibold mb-4">
-              ✅ PLATAFORMA 100% FUNCIONAL
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6 text-foreground">
-              ¡VE CÓMO FUNCIONA EN TIEMPO REAL!
-            </h2>
-            <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Nuestra aplicación ya está <span className="text-primary font-semibold">completamente operativa</span> con
-              más de 2,000 canales en vivo y 50,000 películas disponibles las 24 horas
-            </p>
-          </div>
-
-          <div className="max-w-2xl mx-auto mb-12">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-card border border-border">
-              <img
-                src="/tv_edite.png?v=1"
-                alt="StreamLATAM App - Interface Real Funcionando"
-                className="w-full h-auto block"
-                style={{ maxWidth: '100%' }}
-                onError={(e) => {
-                  // Fallback caso a imagem não carregue
-                  const target = e.target as HTMLImageElement;
-                  target.style.display = 'none';
-                  if (target.parentElement) {
-                    target.parentElement.innerHTML = `
-                      <div class="bg-card p-12 text-center text-foreground rounded-3xl border border-border">
-                        <h3 class="text-2xl font-bold mb-4">📱 PLATAFORMA ACTIVA</h3>
-                        <p class="text-muted-foreground">Aplicación completamente funcional y operativa</p>
-                      </div>
-                    `;
-                  }
-                }}
-              />
-            </div>
-          </div>
-
-
-          {/* Call to Action */}
-          <div className="text-center">
-            <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl p-4 sm:p-8 border border-primary/20">
-              <h3 className="text-xl sm:text-2xl font-bold mb-4 text-foreground">
-                ¿Listo para tener acceso completo?
-              </h3>
-              <p className="text-sm sm:text-base text-muted-foreground mb-6 max-w-2xl mx-auto px-2">
-                Únete a más de 10,000 usuarios que ya disfrutan de todo el contenido premium
-                por solo <span className="text-primary font-bold">$8.99</span>
-              </p>
-              <Button
-                size="lg"
-                className="bg-primary text-sm sm:text-lg px-4 sm:px-8 py-3 sm:py-4 shadow-lg hover:shadow-xl transition-all w-full sm:w-auto max-w-md mx-auto"
-                onClick={() => window.open('https://pay.speedsellx.com/688FFED19B52C', '_blank')}
-              >
-                🚀 OBTENER ACCESO AHORA - $8.99
-              </Button>
-              <p className="text-xs sm:text-sm text-muted-foreground mt-4 px-2">
-                ⚡ Activación inmediata • 🛡️ Garantía 7 días • 🔒 Pago 100% seguro
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Contenido Section */}
       <section className="py-16 md:py-24">
