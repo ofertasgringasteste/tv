@@ -99,25 +99,7 @@ const Index = () => {
                 </div>
               </div>
 
-              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8">
-                Canales Premium, Deportes, UFC, Adultos + Estrenos de Cine como Wicked, Gladiator II, Moana 2
-              </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Button
-                  size="lg"
-                  className="bg-primary text-lg px-8 py-4"
-                  onClick={() => window.open('https://pay.speedsellx.com/688FFED19B52C', '_blank')}
-                >
-                  COMENZAR AHORA - $8.99
-                </Button>
-              </div>
-
-              <div className="text-sm text-muted-foreground space-y-1">
-                <p>✓ Activación inmediata</p>
-                <p>✓ Sin mensualidades</p>
-                <p>✓ Sin contratos</p>
-              </div>
             </div>
 
             <div className="relative">
