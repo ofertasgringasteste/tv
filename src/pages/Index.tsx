@@ -226,11 +226,7 @@ const Index = () => {
             <StreamingLogo name="Crunchyroll" className="h-16 sm:h-20" />
           </div>
 
-          <div className="text-center">
-            <Badge className="bg-accent text-accent-foreground text-lg px-6 py-2">
-              Y MUCHO MÁS... Contenido ilimitado por $8.99
-            </Badge>
-          </div>
+
         </div>
       </section>
 
