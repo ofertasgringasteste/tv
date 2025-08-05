@@ -137,6 +137,10 @@ const Index = () => {
         </div>
       </section>
 
+      <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 text-center py-8">
+        Canales Premium, Deportes, UFC, Adultos + Estrenos de Cine como Wicked, Gladiator II, Moana 2
+      </p>
+
       {/* APP Funcionando Section */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-background to-secondary/30">
         <div className="container mx-auto px-4">
